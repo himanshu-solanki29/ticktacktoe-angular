@@ -1,4 +1,4 @@
-# Ticktacktoe
+# Tick Tack Toe using Angular
 
 Classic Tick Tak Toe game. <br> Play against a bot or play in local multiplayer mode with your friends.!
 
