@@ -1,5 +1,7 @@
 # Ticktacktoe
 
+Classic Tick Tak Toe game with features to play against a bot or play in local multiplayer mode with your friends.!
+
 <h3>App Preview</h3>
 
 ![](demoTickTackToe.gif)
