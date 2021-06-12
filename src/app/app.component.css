@@ -1,0 +1,47 @@
+.playingBoard {
+  flex-basis: 33.333333%;
+}
+
+.boardItem {
+  flex: 0 0 33.333333%;
+  height :130px;
+  cursor: pointer;
+}
+
+.selectedByO {
+  background-color: aqua;
+}
+
+.selectedByX {
+  background-color: yellow;
+}
+
+.currentPlayerTab {
+  transition: background-color 0.3s ease-in-out;
+}
+
+.animateBoardItem {
+  -webkit-animation: flash linear 0.3s 2;
+	animation: flash linear 0.3s 2;
+}
+
+@-webkit-keyframes flash {
+	0% { opacity: 1; }
+	50% { opacity: .1; }
+	100% { opacity: 1; }
+}
+@keyframes flash {
+	0% { opacity: 1; }
+	50% { opacity: .1; }
+	100% { opacity: 1; }
+}
+
+/* .no-pointer {
+  cursor: wait;
+  pointer-events: none;
+}
+
+.show-pointer {
+  cursor: auto;
+  pointer-events: all;
+} */

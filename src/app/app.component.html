@@ -1,0 +1,38 @@
+<div class="container pt-4 text-center pb-5">
+
+  <h1>Tick Tack Toe </h1>
+  <hr>
+
+  <div class="col-md-6 offset-md-3 d-flex flex-wrap playingBoard">
+
+   <span class="container d-flex justify-content-center flex-fill pb-3">
+     <span class="alert currentPlayerTab w-100 border-0" [ngClass]="currentPlayer === 'X' ? 'alert-primary' : ''"><span class="card-body">X's turn
+      <small *ngIf="!gameOver && !multiPlayer && currentPlayer !== userPlayer && currentPlayer === 'X'" class="spinner-border spinner-border-sm text-primary" role="status">
+      </small>
+     </span></span>
+     <span class="alert currentPlayerTab w-100 border-0" [ngClass]="currentPlayer !== 'X' ? 'alert-primary' : ''"><span class="card-body">O's turn
+      <small *ngIf="!gameOver && !multiPlayer && currentPlayer !== userPlayer && currentPlayer !== 'X'" class="spinner-border spinner-border-sm text-primary" role="status">
+      </small>
+     </span></span>
+   </span>
+
+    <span
+    *ngFor="let seq of selectableSequences"
+    [ngClass]="isSelectedByO(seq) ? 'alert-warning' : isSelectedByX(seq) ? 'alert-info' : '' "
+    (click)="validateAndSelectUserInput(seq)"
+    class="card boardItem"
+    id="{{ 'tab_'+seq }}"
+    >
+
+    <span class="d-flex align-items-center justify-content-center h-100">
+      <h1><span *ngIf="isSelectedByX(seq)"><b>X</b></span></h1>
+      <h1><span *ngIf="isSelectedByO(seq)"><b>O</b></span></h1>
+    </span>
+
+    </span>
+  </div>
+
+<button class="btn btn-md btn-primary mt-3 col-6" style="height:60px" (click)="reset()">Restart</button>
+
+
+</div>
