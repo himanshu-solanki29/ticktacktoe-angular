@@ -1,6 +1,6 @@
-# Tick Tack Toe using Angular 8
+# Tic Tac Toe using Angular 8
 
-Classic Tick Tak Toe game. <br> Play against a bot or play in local multiplayer mode with your friends.!
+Classic Tic Tac Toe game. <br> Play against a bot or play in local multiplayer mode with your friends.!
 
 <h3>App Preview</h3>
 
